@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
         integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,7 +41,8 @@
             </div>
             <div class="nav_action">
                 <!--theme-->
-                <i class="ri-sun-line"></i>
+                    <i class="ri-sun-line change-theme" id="theme-button"></i>
+           
                 <!--menu-->
                 <div class="navbar_toogle" id="navbar-toogle">
                     <i class="ri-menu-line"></i>
@@ -49,49 +52,41 @@
     </header>
     <!----------------------------HOME------------------------>
     <div class="home" id="Home">
-        <div class="home_social">
-            <a href="https://twitter.com/kaderbozkaya_" class="home_social-icon" target="_blank">
-                <i class="ri-twitter-x-line"></i>
-            </a>
-            <a href="https://github.com/kaderbozkaya" class="home_social-icon" target="_blank">
-                <i class="ri-github-fill"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kader-bozkaya/" class="home_social-icon" target="_blank">
-                <i class="ri-linkedin-box-fill"></i>
-            </a>
-
+        <div class="home_image">
+            <div class="profile_content">
+                <img src="image/profil-image.png" alt="" class="profile_image">
+            </div>
         </div>
         <div class="home_info">
             <h1 class="title">Hi, I am Kader</h1>
             <p class="subtitle">Frontend Developer</p>
             <p class="home_desc">I promote, support and use free and open source software to the
                 extent possible.</p>
+                
+            </div>
+            <div class="home_social">
+                <a href="https://twitter.com/kaderbozkaya_" class="home_social-icon" target="_blank">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="https://github.com/kaderbozkaya" class="home_social-icon" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kader-bozkaya/" class="home_social-icon" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+    
+            </div>
 
-        </div>
-
-        <div class="home_image">
-            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <mask id="mask0" mask-type="alpha">
-                    <path fill="#FF0066"
-                        d="M29.7,-54.1C39.1,-46.1,47.6,-39.2,55.9,-30.4C64.2,-21.6,72.4,-10.8,74.2,1C76,12.9,71.4,25.7,62.9,34.2C54.3,42.6,41.8,46.6,30.6,55C19.5,63.3,9.7,76,0.3,75.4C-9.1,74.9,-18.2,61.1,-26.4,51.1C-34.6,41,-41.8,34.7,-50.3,26.8C-58.7,18.9,-68.4,9.4,-68.9,-0.3C-69.4,-10,-60.6,-19.9,-55.7,-34.1C-50.8,-48.2,-49.8,-66.4,-41.2,-74.7C-32.6,-83.1,-16.3,-81.6,-3,-76.3C10.2,-71.1,20.4,-62,29.7,-54.1Z"
-                        transform="translate(100 100)" />
-                </mask>
-                <g mask="url(#mask0)">
-                    <image class="home_blob-img" xlink: href="image/WhatsApp Image 2023-12-25 at 11.05.02.jpeg" />
-                </g>
-            </svg>
-
-
-
-        </div>
+      
     </div>
 
     <!----------------------------ABOUT------------------------>
     <div class="about" id="About">
-        <p class="title">About Me</p>
-        <p class="subtitle">My Introduction</p>
+        <div class="about_header">
 
+            <p class="title">About Me</p>
+            <p class="subtitle">My Introduction</p>
+        </div>
         <div class="about-title">
             <div class="about_image">
                 <img src="image/WhatsApp Image 2023-08-11 at 21.37.51.jpeg" class="about_img">
@@ -140,71 +135,58 @@
     <div class="project" id="Project">
         <p class="title"> Project </p>
         <p class="subtitle">My Github Projects</p>
-        <div class="project_section">
-            <article class="card">
-                <a href="#">
-                    <img src="image/calculator_img.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <img src="image/form_img.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <img src="image/login_img.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <img src="image/music-playerr.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <img src="image/website_img.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <img src="image/weather_img.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <img src="image/notes_img.png" class="project_image" />
-                    <i class="ri-arrow-right-circle-fill"></i>
-                </a>
-                <h1>Calculator App</h1>
-                <p> this project was written with html,css javascript. you can do operations such as addition and
-                    subtraction with this app </p>
-            </article>
+
+      <div class="project_container">
+        <div class="project_swiper swiper">
+            <div class="project_section swiper-wrapper">
+                <article class="card swiper-slide">
+                    <div class="project_border">
+                        <a href="https://github.com/kaderbozkaya/calculator" target="_blank">
+                            <img src="image/calculator_img.png" class="project_image" />
+                            <i class="ri-arrow-right-circle-fill"></i>
+                            
+                        </a>
+                    </div>
+                    <h1>Calculator App</h1>
+                    <p> this project was written with html,css javascript. you can do operations such as addition and
+                        subtraction with this app </p>
+                </article>
+                <article class="card swiper-slide">
+                    <div class="project_border">
+                        <a href="https://github.com/kaderbozkaya/crud-sort-table" target="_blank">
+                            <img src="image/form_img.png" class="project_image" />
+                            <i class="ri-arrow-right-circle-fill"></i>
+                        </a>
+                    </div>
+                    <h1>CRUD App</h1>
+                    <p> I created a project that can read the data you enter into a form and put it into a table. You can click on the table header(th) to sort the data alphabetically or numerically, and you can also edit or delete rows. The project also cleans the data in the form before putting it into the table. </p>
+                </article>
+               
+                <article class="card swiper-slide">
+                   <div class="project_border">
+                    <a href="#">
+                        <img src="image/weather_img.png" class="project_image" />
+                        <i class="ri-arrow-right-circle-fill"></i>
+                    </a>
+                   </div>
+                    <h1>Weather with Openweather Api</h1>
+                    <p> this project was written with html,css javascript. you can do operations such as addition and
+                        subtraction with this app </p>
+                </article>
+                <article class="card swiper-slide">
+                   <div class="project_border">
+                    <a href="#">
+                        <img src="image/notes_img.png" class="project_image" />
+                        <i class="ri-arrow-right-circle-fill"></i>
+                    </a>
+                   </div>
+                    <h1>Notes App</h1>
+                    <p> The main functionalities of the application include creating a note, setting a character limit, deleting notes, editing a note, and saving them to localStorage. </p>
+                </article>
+            </div>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <!---------------------------CONTACT----------------------->
 
@@ -264,8 +246,7 @@
 
         <span>&#169; All Rights Reserved By Kader Bozkaya</span>
     </footer>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 
