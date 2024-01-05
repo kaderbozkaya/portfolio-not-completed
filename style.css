@@ -14,19 +14,10 @@
     --shadow-color: rgba(300, 90%, 30%, .1)
      --body-font: font-family: 'Genos', sans-serif;
     font-family: 'Tilt Neon', cursive;
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --xsmall-font-size: .75rem;
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000;
+ 
 
 }
 
@@ -80,11 +71,6 @@ button {
 }
 
 
-/* img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-} */
 
 .title {
     margin-top: 1rem;
@@ -189,6 +175,9 @@ body.dark-theme{
     font-weight: 600;
 
 
+}
+.navbar_list a {
+    color: #50d8d7;
 }
 
 .navbar_list a:hover {
@@ -481,10 +470,14 @@ body.dark-theme{
     background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
     transition: transform .4s;
 }
-
-p {
+.project_header {
+    font-weight: var(--font-semi-bold);
+    font-size: 2rem;
+}
+.card p {
     width: 30rem;
     text-wrap: wrap;
+    margin-left: 2rem;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -2rem;
